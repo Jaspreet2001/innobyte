@@ -38,24 +38,3 @@ nextButton.addEventListener("click", () => {
 
 // Initialize the slider
 updateSlider();
-
-/**
- * Navbar Toggle Event
- */
-const navToggleEvent = function () {
-  window.addEventListener("scroll", () => {
-    const header = document.querySelector("header");
-    const goTopBtn = document.querySelector(".go-top-btn");
-
-    if (window.scrollY > 200) {
-      header.classList.add("active");
-      goTopBtn.classList.add("active");
-    } else {
-      header.classList.remove("active");
-      goTopBtn.classList.remove("active");
-    }
-  });
-};
-
-// Initialize Navbar Toggle
-navToggleEvent();
